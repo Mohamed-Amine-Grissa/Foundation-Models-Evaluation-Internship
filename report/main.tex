@@ -1,0 +1,161 @@
+\documentclass[a4paper,oneside,12pt]{report}
+
+\usepackage{fancyhdr}
+\usepackage[Glenn]{fncychap}
+
+\fancyhf{}
+\fancyhead[L]{\leftmark }
+\fancyfoot[C]{\thepage}
+\renewcommand{\footrulewidth}{1pt}
+
+\usepackage{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[french]{babel}
+\usepackage{a4wide}
+\usepackage{indentfirst}
+\usepackage{graphicx}
+\usepackage{placeins}
+%Paquets relatifs aux images
+\usepackage{graphicx}
+\usepackage{subcaption}
+\usepackage[export]{adjustbox}
+\usepackage{wrapfig}
+%pour la mise en page des tableaux
+\usepackage{array}
+\usepackage{blindtext}
+\usepackage{tabularx}
+\usepackage{xltabular}
+\usepackage{lipsum}
+\usepackage{longtable,tabu}
+\usepackage{times}
+\usepackage{wrapfig}
+\usepackage{color, colortbl}
+\usepackage{setspace}
+\onehalfspacing
+\usepackage[svgnames,dvipsnames]{xcolor}
+\definecolor{Gray}{gray}{0.9}
+\definecolor{LightCyan}{rgb}{0.88,1,1}
+\definecolor{RoyalBlue}{rgb}{0.0, 0.14, 0.4}
+\definecolor{BlueGreen}{rgb}{0.0, 0.87, 0.87}
+\definecolor{RoyalPurple}{rgb}{0.47, 0.32, 0.66}
+\usepackage{longtable}
+\usepackage{float}
+\usepackage{array} % for extrarowheight
+\usepackage{lscape}
+\usepackage{afterpage}
+\usepackage{rotating}
+\usepackage[nottoc,notlof,notlot,notbib]{tocbibind}
+\usepackage{pdfpages}
+\graphicspath{{images/}}
+\newlength\figureheight
+\newlength\figurewidth
+\usepackage{ifthen}
+
+
+\usepackage{changepage}
+\usepackage{parskip}
+\setlength{\parindent}{15pt}
+
+\setlength\arrayrulewidth{1pt}
+\renewcommand{\baselinestretch}{1.241}
+\usepackage{fancyhdr}
+
+\setlength{\headheight}{16pt}
+
+\let\headruleORIG\headrule
+\renewcommand{\headrule}{\color{black} \headruleORIG}
+\renewcommand{\headrulewidth}{1.0pt}
+\usepackage{colortbl}
+\arrayrulecolor{black}
+
+\setcounter{secnumdepth}{4}
+
+\usepackage{amsthm}
+\usepackage{amssymb,amsmath}
+\usepackage{array}
+\usepackage{bm}
+\usepackage{multirow}
+\usepackage[footnote]{acronym}
+
+\usepackage[bottom]{footmisc}
+
+\pagestyle{fancy}
+
+\usepackage{makecell}
+\usepackage{amssymb}% http://ctan.org/pkg/amssymb
+\usepackage{pifont}% http://ctan.org/pkg/pifont
+\newcommand{\cmark}{\ding{51}}%
+\newcommand{\xmark}{\ding{55}}%
+
+\renewcommand\theadalign{bl}
+\renewcommand\theadfont{\bfseries}
+\renewcommand\cellalign{bl}
+\renewcommand\cellgape{\Gape[2pt]}
+\newcommand\blankpage{
+   \null
+     \thispagestyle{empty}%
+     \addtocounter{page}{-1}%
+     \newpage}
+\parskip=5pt
+
+\usepackage{afterpage}
+\usepackage{csquotes}
+\usepackage[backend=biber,style=numeric,sorting=nyt]{biblatex}
+\addbibresource{LLM_Evaluation_Sources_Used.bib}
+\AtBeginBibliography{\raggedright}
+\usepackage{xurl}
+\usepackage{ifpdf}
+\ifpdf
+\usepackage[pdftex]{hyperref}
+\else
+\usepackage{hyperref}
+\fi
+\usepackage{color}
+\hypersetup{%
+colorlinks=true,
+linkcolor=black,
+citecolor=black,
+urlcolor=blue}
+% \urlstyle{same}
+\usepackage[french,nohints]{minitoc}
+\onehalfspacing
+\setcounter{tocdepth}{3}
+
+\begin{document}
+\dominitoc
+\pagenumbering{roman}
+
+\include{guard}
+\include{Dedications}
+\include{remerciment}
+\tableofcontents
+\setcounter{tocdepth}{3}
+
+\clearpage
+\listoffigures
+\listoftables
+\clearpage
+\include{Acronymes}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Contenu du rapport et références %%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\cleardoublepage
+
+\pagenumbering{arabic}
+\include{general_introduction}
+\include{Chapter1/Chapter1}
+\include{Chapter2/Chapter2}
+\include{Chapter3/Chapter3}
+\include{Chapter4/Chapter4}
+\include{Conclusion}
+
+\nocite{*}
+\printbibliography[heading=bibintoc,title={Bibliographie}]
+
+\clearpage
+\thispagestyle{empty}
+
+\end{document}

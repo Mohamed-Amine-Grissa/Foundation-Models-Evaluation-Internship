@@ -9,3 +9,15 @@ report/**/*.toc
 report/**/*.out
 report/**/*.synctex.gz
 references/book-excerpts/
+report/main.pdf
+report/Resume.pdf
+report/**/*.bbl
+report/**/*.bcf
+report/**/*.blg
+report/**/*.run.xml
+report/**/*.fdb_latexmk
+report/**/*.fls
+report/**/*.lof
+report/**/*.lot
+report/**/*.mtc*
+report/**/*.maf
