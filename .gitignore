@@ -1,0 +1,10 @@
+*.gguf
+.venv/
+__pycache__/
+*.pyc
+results/**/*.raw
+report/**/*.aux
+report/**/*.log
+report/**/*.toc
+report/**/*.out
+report/**/*.synctex.gz

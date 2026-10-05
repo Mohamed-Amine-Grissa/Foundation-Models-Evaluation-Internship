@@ -1,0 +1,9 @@
+[llama_cpp]
+bin_dir = "C:/Users/LENOVO/dev/llama.cpp/build/bin/Release"
+models_dir = "C:/Users/LENOVO/dev/llama.cpp/models"
+chat_model = "qwen2.5-1.5b-instruct-q4_k_m.gguf"
+embed_model = "nomic-embed-text-v1.5.Q4_K_M.gguf"
+
+[servers]
+chat_port = 8081
+embed_port = 8080
