@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Weekly Report</title>
+</head>
+<body>
+<div class="container">
+<h1>Weekly Report</h1>
+<p>This report summarizes activity for the week.</p>
+<ul>
+<li>Task one completed successfully.</li>
+<li>Task two is in progress.</li>
+<li>Task three has not started yet.</li>
+</ul>
+<table>
+<tr><th>Task</th><th>Status</th></tr>
+<tr><td>Task one</td><td>Done</td></tr>
+<tr><td>Task two</td><td>In Progress</td></tr>
+<tr><td>Task three</td><td>Not Started</td></tr>
+</table>
+<div class="footer">
+<p>End of report.</p>
+</div>
+</div>
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+<title>Meeting Notes</title>
+</head>
+<body>
+<div class="container">
+<h1>Meeting Notes</h1>
+<p>This document contains notes from the meeting.</p>
+<ul>
+<li>Attendee one raised a question.</li>
+<li>Attendee two provided an update.</li>
+<li>Attendee three requested a follow-up.</li>
+</ul>
+</div>
+</body>
+</html>

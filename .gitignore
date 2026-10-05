@@ -8,3 +8,4 @@ report/**/*.log
 report/**/*.toc
 report/**/*.out
 report/**/*.synctex.gz
+references/book-excerpts/
