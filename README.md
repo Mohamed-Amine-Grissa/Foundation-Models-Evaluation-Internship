@@ -4,7 +4,6 @@
 ![llama.cpp](https://img.shields.io/badge/inference-llama.cpp-black)
 ![CPU only](https://img.shields.io/badge/hardware-CPU--only-lightgrey)
 ![Models](https://img.shields.io/badge/models-GGUF_Q4__K__M-FFD21E?logo=huggingface&logoColor=black)
-![Report](https://img.shields.io/badge/report-LaTeX_(FR)-008080?logo=latex&logoColor=white)
 ![Last commit](https://img.shields.io/github/last-commit/Mohamed-Amine-Grissa/Foundation-Models-Evaluation-Internship)
 ![Repo size](https://img.shields.io/github/repo-size/Mohamed-Amine-Grissa/Foundation-Models-Evaluation-Internship)
 
