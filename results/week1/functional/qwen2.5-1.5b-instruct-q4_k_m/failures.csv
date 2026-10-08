@@ -1,0 +1,7 @@
+problem_id,sample,seed,category,detail
+second_largest,0,1000,logic,"returned 5 on `assert second_largest([5, 5, 4]) == 4`"
+second_largest,4,1004,logic,"returned None on `assert second_largest([5, 5, 4]) == 4`"
+run_length_encode,1,1001,crash,IndexError: string index out of range on `assert run_length_encode('') == ''`
+run_length_encode,2,1002,format,returned '3a1b2c' on `assert run_length_encode('aaabcc') == 'a3b1c2'`
+run_length_encode,3,1003,format,returned '03a1b2c' on `assert run_length_encode('aaabcc') == 'a3b1c2'`
+run_length_encode,4,1004,format,returned '3a1b2c' on `assert run_length_encode('aaabcc') == 'a3b1c2'`

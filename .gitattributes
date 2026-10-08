@@ -1,0 +1,5 @@
+# Experiment inputs and outputs are hashed or compared byte for byte, so keep
+# them LF on every checkout regardless of core.autocrlf.
+data/** text eol=lf
+prompts/** text eol=lf
+results/** text eol=lf

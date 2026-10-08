@@ -1,0 +1,6 @@
+problem_id,sample,seed,category,detail
+fizzbuzz,1,1001,no_code,no fenced code block in reply
+second_largest,1,1001,no_code,no fenced code block in reply
+run_length_encode,0,1000,format,returned 'a3bc2' on `assert run_length_encode('aaabcc') == 'a3b1c2'`
+run_length_encode,2,1002,logic,returned 'b1' on `assert run_length_encode('aaabcc') == 'a3b1c2'`
+run_length_encode,3,1003,format,returned 'a3bc2' on `assert run_length_encode('aaabcc') == 'a3b1c2'`

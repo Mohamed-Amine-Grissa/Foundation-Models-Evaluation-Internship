@@ -1,8 +1,14 @@
 [llama_cpp]
 bin_dir = "C:/Users/LENOVO/dev/llama.cpp/build/bin/Release"
 models_dir = "C:/Users/LENOVO/dev/llama.cpp/models"
-chat_model = "qwen2.5-1.5b-instruct-q4_k_m.gguf"
+chat_model = "qwen2.5-1.5b-instruct-q4_k_m.gguf"   # default generator
 embed_model = "nomic-embed-text-v1.5.Q4_K_M.gguf"
+judge_model = "Phi-3.5-mini-instruct-Q4_K_M.gguf"   # judge only, never a generator
+generators = [
+  "qwen2.5-1.5b-instruct-q4_k_m.gguf",
+  "qwen2.5-0.5b-instruct-q4_k_m.gguf",
+  "Llama-3.2-3B-Instruct-Q4_K_M.gguf",
+]
 
 [servers]
 # 8080/8081 are taken on this machine (postgres, Apache httpd)

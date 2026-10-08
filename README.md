@@ -15,8 +15,12 @@ Hands-on experiments in evaluating and prompting local LLMs, following Chapters 
 - llama.cpp built separately from <https://github.com/ggml-org/llama.cpp>
   (not included in this repo)
 - Models downloaded with the Hugging Face `hf` CLI into llama.cpp's models
-  folder: Qwen2.5-1.5B-Instruct (Q4_K_M GGUF) and nomic-embed-text-v1.5
-  (Q4_K_M GGUF)
+  folder, all as Q4_K_M GGUF:
+  - Qwen2.5-1.5B-Instruct — generator (default chat model)
+  - Qwen2.5-0.5B-Instruct — generator
+  - Llama-3.2-3B-Instruct — generator
+  - Phi-3.5-mini-instruct — judge only
+  - nomic-embed-text-v1.5 — embeddings
 
 ## Setup
 

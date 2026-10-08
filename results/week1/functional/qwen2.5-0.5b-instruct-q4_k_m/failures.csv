@@ -1,0 +1,23 @@
+problem_id,sample,seed,category,detail
+is_palindrome,2,1002,crash,"AssertionError: Failed for Was it a car or a cat I saw?. Expected True, got False."
+is_palindrome,3,1003,crash,"AssertionError: Failed for : expected False, got True"
+is_palindrome,4,1004,crash,AssertionError: 
+fizzbuzz,1,1001,crash,AssertionError: 
+fizzbuzz,4,1004,logic,"returned ['1', '2', 'Fizz', '4', 'Buzz', 'Fizz', '7', '8', 'Fizz', 'Buzz', '11', 'Fizz', '13', '14', 'Fizz'] on `assert fizzbuzz(15)[-1] == 'FizzBuzz'`"
+second_largest,0,1000,format,"returned -inf on `assert second_largest([-2, -1]) == -2`"
+second_largest,1,1001,crash,AssertionError: 
+second_largest,2,1002,logic,"returned 1 on `assert second_largest([3, 1, 4, 1, 5]) == 4`"
+second_largest,3,1003,logic,"returned 7 on `assert second_largest([7, 7, 7]) is None`"
+run_length_encode,0,1000,format,returned '0a1a1a1b1c1c' on `assert run_length_encode('aaabcc') == 'a3b1c2'`
+run_length_encode,1,1001,format,returned '0a3b1c2' on `assert run_length_encode('aaabcc') == 'a3b1c2'`
+run_length_encode,2,1002,no_code,no fenced code block in reply
+run_length_encode,3,1003,format,returned 'a1a1a1b1c1c1c' on `assert run_length_encode('aaabcc') == 'a3b1c2'`
+run_length_encode,4,1004,format,returned '011111111111' on `assert run_length_encode('aaabcc') == 'a3b1c2'`
+merge_intervals,0,1000,logic,"returned [[1, 3], [2, 10], [8, 10]] on `assert merge_intervals([[1, 3], [2, 6], [8, 10]]) == [[1, 6], [8, 10]]`"
+merge_intervals,1,1001,crash,"TypeError: '<' not supported between instances of 'list' and 'tuple' on `assert merge_intervals([[1, 3], [2, 6], [8, 10]]) == [[1, 6], [8, 10]]`"
+merge_intervals,3,1003,logic,"returned [[5, 7]] on `assert merge_intervals([[5, 7], [1, 2]]) == [[1, 2], [5, 7]]`"
+merge_intervals,4,1004,crash,IndexError: list index out of range
+roman_to_int,1,1001,logic,returned -1 on `assert roman_to_int('III') == 3`
+roman_to_int,2,1002,crash,"TypeError: can only concatenate str (not ""int"") to str on `assert roman_to_int('IV') == 4`"
+roman_to_int,3,1003,logic,returned -3 on `assert roman_to_int('III') == 3`
+roman_to_int,4,1004,logic,returned 1 on `assert roman_to_int('IV') == 4`

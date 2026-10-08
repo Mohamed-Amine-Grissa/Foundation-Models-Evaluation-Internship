@@ -17,6 +17,12 @@ def model_path(cfg: dict, key: str) -> Path:
     """key is 'chat_model' or 'embed_model'."""
     return Path(cfg["llama_cpp"]["models_dir"]) / cfg["llama_cpp"][key]
 
+def generator_path(cfg: dict, model_file: str) -> Path:
+    """Path of a generator model; model_file must be listed in llama_cpp.generators."""
+    if model_file not in cfg["llama_cpp"]["generators"]:
+        raise ValueError(f"{model_file} is not in llama_cpp.generators in config.toml")
+    return Path(cfg["llama_cpp"]["models_dir"]) / model_file
+
 def llama_build(cfg: dict, exe_name: str = "llama-perplexity.exe") -> str:
     """Asks a llama.cpp binary for its build string, e.g. '10358 (030ebb558)'."""
     out = subprocess.run([str(bin_path(cfg, exe_name)), "--version"],

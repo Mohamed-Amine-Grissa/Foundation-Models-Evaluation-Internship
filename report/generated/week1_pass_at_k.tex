@@ -1,13 +1,17 @@
-\begin{tabular}{lrrrr}
+\begin{tabular}{lrrrrrr}
 \toprule
-Problème & $c$ & $n$ & pass@1 & pass@5 \\
+ & \multicolumn{2}{c}{Qwen2.5-1.5B} & \multicolumn{2}{c}{Qwen2.5-0.5B} & \multicolumn{2}{c}{Llama-3.2-3B} \\
+\cmidrule(lr){2-3}
+\cmidrule(lr){4-5}
+\cmidrule(lr){6-7}
+Problème & $c/n$ & pass@1 & $c/n$ & pass@1 & $c/n$ & pass@1 \\
 \midrule
-\texttt{is\_palindrome} & 5 & 5 & 1.000 & 1.000 \\
-\texttt{fizzbuzz} & 5 & 5 & 1.000 & 1.000 \\
-\texttt{second\_largest} & 3 & 5 & 0.600 & 1.000 \\
-\texttt{run\_length\_encode} & 1 & 5 & 0.200 & 1.000 \\
-\texttt{merge\_intervals} & 5 & 5 & 1.000 & 1.000 \\
-\texttt{roman\_to\_int} & 5 & 5 & 1.000 & 1.000 \\
-Moyenne & 24 & 30 & 0.800 & 1.000 \\
+\texttt{is\_palindrome} & 5/5 & 1.000 & 2/5 & 0.400 & 5/5 & 1.000 \\
+\texttt{fizzbuzz} & 5/5 & 1.000 & 3/5 & 0.600 & 4/5 & 0.800 \\
+\texttt{second\_largest} & 3/5 & 0.600 & 1/5 & 0.200 & 4/5 & 0.800 \\
+\texttt{run\_length\_encode} & 1/5 & 0.200 & 0/5 & 0.000 & 2/5 & 0.400 \\
+\texttt{merge\_intervals} & 5/5 & 1.000 & 1/5 & 0.200 & 5/5 & 1.000 \\
+\texttt{roman\_to\_int} & 5/5 & 1.000 & 1/5 & 0.200 & 5/5 & 1.000 \\
+Moyenne & 24/30 & 0.800 & 8/30 & 0.267 & 25/30 & 0.833 \\
 \bottomrule
 \end{tabular}

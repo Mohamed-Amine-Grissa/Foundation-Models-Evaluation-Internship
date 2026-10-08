@@ -1,9 +1,12 @@
 """Functional correctness of generated code: n samples per problem, each run
 against its asserts in an isolated subprocess, summarised as pass@k.
 
-Requires the chat llama-server on chat_port (config.toml).
-Usage (from repo root):  python week1_metrics/functional_correctness/run_functional.py
+Requires the chat llama-server on chat_port (config.toml), serving the model
+named by --model (default: chat_model). Results go to a per-model folder.
+Usage (from repo root):
+    python week1_metrics/functional_correctness/run_functional.py [--model <gguf file>]
 """
+import argparse
 import csv
 import json
 import re
@@ -12,8 +15,10 @@ import sys
 import tempfile
 from pathlib import Path
 
+import requests
+
 sys.path.insert(0, str(Path(__file__).resolve().parents[2]))
-from common.config import REPO_ROOT, load_config, model_path, llama_build
+from common.config import REPO_ROOT, load_config, generator_path, llama_build
 from common.llm import LlamaServerClient
 from common.metrics import pass_at_k
 from common.runlog import write_run_log, sha256_of_file
@@ -28,7 +33,7 @@ PROMPT_VERSION = "week1_functional_system_v1"
 
 PROBLEMS_JSON = REPO_ROOT / "data" / "code_problems.json"
 SYSTEM_PROMPT_FILE = REPO_ROOT / "prompts" / f"{PROMPT_VERSION}.txt"
-OUT_DIR = REPO_ROOT / "results" / "week1" / "functional"
+RESULTS_DIR = REPO_ROOT / "results" / "week1" / "functional"   # one subfolder per model
 
 _FENCE_RE = re.compile(r"```(?:python|py)?[ \t]*\r?\n(.*?)```", re.DOTALL | re.IGNORECASE)
 
@@ -59,7 +64,16 @@ def run_sample(code: str, tests: list[str]) -> tuple[str, str]:
 
 def main() -> None:
     cfg = load_config()
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--model", default=cfg["llama_cpp"]["chat_model"],
+                        help="generator GGUF filename from config.toml (must be the one the chat server is serving)")
+    args = parser.parse_args()
+    model = generator_path(cfg, args.model)
+    OUT_DIR = RESULTS_DIR / model.stem
     client = LlamaServerClient(cfg["servers"]["chat_port"])
+    served = [Path(m["id"]).name for m in requests.get(f"{client.base}/v1/models", timeout=10).json()["data"]]
+    if model.name not in served:
+        sys.exit(f"chat server is serving {served}, not {model.name}; refusing to mislabel results")
     system_prompt = SYSTEM_PROMPT_FILE.read_text(encoding="utf-8").strip()
     problems = json.loads(PROBLEMS_JSON.read_text(encoding="utf-8"))
     OUT_DIR.mkdir(parents=True, exist_ok=True)
@@ -101,9 +115,9 @@ def main() -> None:
         writer.writerows(summary)
 
     write_run_log(str(OUT_DIR / "run_log.json"),
-                  model_path=str(model_path(cfg, "chat_model")),
+                  model_path=str(model),
                   llama_build=llama_build(cfg, "llama-server.exe"),
-                  command="python week1_metrics/functional_correctness/run_functional.py",
+                  command=f"python week1_metrics/functional_correctness/run_functional.py --model {model.name}",
                   prompt_version=PROMPT_VERSION,
                   seed=BASE_SEED,
                   temperature=TEMPERATURE,

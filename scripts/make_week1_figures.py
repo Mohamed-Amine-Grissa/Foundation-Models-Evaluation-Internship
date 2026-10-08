@@ -15,7 +15,7 @@ matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
-from common.config import REPO_ROOT
+from common.config import REPO_ROOT, load_config
 
 RESULTS = REPO_ROOT / "results" / "week1"
 FIG_DIR = REPO_ROOT / "figures"
@@ -45,9 +45,17 @@ def read_csv(path: Path) -> list[dict] | None:
     with open(path, newline="", encoding="utf-8") as f:
         return list(csv.DictReader(f))
 
-def write_table(name: str, colspec: str, header: list[str], body: list[list[str]]) -> None:
-    lines = [rf"\begin{{tabular}}{{{colspec}}}", r"\toprule",
-             " & ".join(header) + r" \\", r"\midrule"]
+def write_table(name: str, colspec: str, header: list[str] | list[list[str]],
+                body: list[list[str]], header_rules: list[str] | None = None) -> None:
+    """header is one row, or several rows; header_rules are raw lines (e.g.
+    \\cmidrule) inserted after the first header row."""
+    rows = header if header and isinstance(header[0], list) else [header]
+    lines = [rf"\begin{{tabular}}{{{colspec}}}", r"\toprule"]
+    for i, hrow in enumerate(rows):
+        lines.append(" & ".join(hrow) + r" \\")
+        if i == 0 and header_rules:
+            lines += header_rules
+    lines.append(r"\midrule")
     lines += [" & ".join(row) + r" \\" for row in body]
     lines += [r"\bottomrule", r"\end{tabular}", ""]
     out = TABLE_DIR / name
@@ -124,17 +132,76 @@ def similarity_outputs() -> None:
                   f"{float(r['bleu']):.3f}", f"{float(r['rouge_l']):.3f}",
                   f"{float(r['cosine']):.3f}"] for r in rows])
 
+MODEL_LABELS = {
+    "qwen2.5-1.5b-instruct-q4_k_m": "Qwen2.5-1.5B",
+    "qwen2.5-0.5b-instruct-q4_k_m": "Qwen2.5-0.5B",
+    "Llama-3.2-3B-Instruct-Q4_K_M": "Llama-3.2-3B",
+}
+FAILURE_FR = [("format", "Format de sortie"), ("logic", "Erreur logique"),
+              ("crash", "Exception"), ("timeout", "Délai dépassé"),
+              ("no_code", "Aucun code extrait")]
+
+def functional_models() -> list[tuple[str, list[dict]]]:
+    """(model stem, pass_at_k rows) for each generator in config.toml order that has results."""
+    out = []
+    for model_file in load_config()["llama_cpp"]["generators"]:
+        stem = Path(model_file).stem
+        rows = read_csv(RESULTS / "functional" / stem / "pass_at_k.csv")
+        if rows:
+            out.append((stem, rows))
+    return out
+
 def pass_at_k_outputs() -> None:
-    rows = read_csv(RESULTS / "functional" / "pass_at_k.csv")
+    models = functional_models()
+    if not models:
+        return
+    problem_ids = [r["problem_id"] for r in models[0][1]]   # same problem set, MEAN last
+    by_model = {stem: {r["problem_id"]: r for r in rows} for stem, rows in models}
+    labels = [MODEL_LABELS.get(stem, stem) for stem, _ in models]
+
+    header = [["", *[rf"\multicolumn{{2}}{{c}}{{{tex(l)}}}" for l in labels]],
+              ["Problème", *(["$c/n$", "pass@1"] * len(models))]]
+    rules = [rf"\cmidrule(lr){{{2 + 2 * i}-{3 + 2 * i}}}" for i in range(len(models))]
+    body = []
+    for pid in problem_ids:
+        name = "Moyenne" if pid == "MEAN" else rf"\texttt{{{tex(pid)}}}"
+        cells = []
+        for stem, _ in models:
+            r = by_model[stem][pid]
+            cells += [f"{r['c']}/{r['n']}", f"{float(r['pass@1']):.3f}"]
+        body.append([name, *cells])
+    write_table("week1_pass_at_k.tex", "l" + "rr" * len(models), header, body, rules)
+
+    # grouped bars: pass@1 per problem, one bar per model
+    width = 0.8 / len(models)
+    fig, ax = plt.subplots(figsize=(9, 3.8))
+    xs = range(len(problem_ids))
+    for j, (stem, _) in enumerate(models):
+        offs = [x + (j - (len(models) - 1) / 2) * width for x in xs]
+        ax.bar(offs, [float(by_model[stem][pid]["pass@1"]) for pid in problem_ids],
+               width, label=labels[j])
+    ax.set_xticks(list(xs), ["Moyenne" if p == "MEAN" else p for p in problem_ids],
+                  fontsize=8, rotation=20, ha="right")
+    ax.set_ylim(0, 1.05)
+    ax.set_ylabel("pass@1")
+    ax.legend(ncol=len(models), fontsize=8, loc="upper center", bbox_to_anchor=(0.5, 1.15))
+    ax.grid(axis="y", alpha=0.3)
+    fig.tight_layout()
+    out = FIG_DIR / "week1_pass_at_k.pdf"
+    fig.savefig(out)
+    plt.close(fig)
+    print(f"Wrote {out.relative_to(REPO_ROOT)}")
+
+def failure_outputs() -> None:
+    rows = read_csv(RESULTS / "functional" / "failure_counts.csv")
     if not rows:
         return
-    body = []
-    for r in rows:
-        name = "Moyenne" if r["problem_id"] == "MEAN" else rf"\texttt{{{tex(r['problem_id'])}}}"
-        body.append([name, r["c"], r["n"], f"{float(r['pass@1']):.3f}",
-                     f"{float(r['pass@5']):.3f}"])
-    write_table("week1_pass_at_k.tex", "lrrrr",
-                ["Problème", "$c$", "$n$", "pass@1", "pass@5"], body)
+    order = [Path(m).stem for m in load_config()["llama_cpp"]["generators"]]
+    rows = sorted((r for r in rows if r["model"] in order), key=lambda r: order.index(r["model"]))
+    write_table("week1_failures.tex", "l" + "r" * (len(FAILURE_FR) + 1),
+                ["Modèle", *[f for _, f in FAILURE_FR], "Total"],
+                [[tex(MODEL_LABELS.get(r["model"], r["model"])), *[r[k] for k, _ in FAILURE_FR],
+                  f"{r['total_failures']}/{r['total_samples']}"] for r in rows])
 
 def main() -> None:
     FIG_DIR.mkdir(exist_ok=True)
@@ -142,6 +209,7 @@ def main() -> None:
     perplexity_outputs()
     similarity_outputs()
     pass_at_k_outputs()
+    failure_outputs()
 
 if __name__ == "__main__":
     main()
