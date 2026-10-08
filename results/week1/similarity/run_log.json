@@ -1,0 +1,14 @@
+{
+  "timestamp": "2026-10-08T12:26:10.903249+00:00",
+  "model_file": "nomic-embed-text-v1.5.Q4_K_M.gguf",
+  "model_sha256": "d4e388894e09cf3816e8b0896d81d265b55e7a9fff9ab03fe8bf4ef5e11295ac",
+  "llama_build": "10358 (030ebb558)",
+  "command": "python week1_metrics/similarity/run_similarity.py",
+  "prompt_version": null,
+  "seed": null,
+  "temperature": null,
+  "embed_port": 8090,
+  "embed_prefix": "search_document: ",
+  "pairs_file": "data/similarity_pairs.csv",
+  "n_pairs": 16
+}

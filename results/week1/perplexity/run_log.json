@@ -1,0 +1,19 @@
+{
+  "timestamp": "2026-10-08T12:15:03.790686+00:00",
+  "model_file": "qwen2.5-1.5b-instruct-q4_k_m.gguf",
+  "model_sha256": "6a1a2eb6d15622bf3c96857206351ba97e1af16c30d7a74ee38970e434e9407e",
+  "llama_build": "10358 (030ebb558)",
+  "command": "llama-perplexity.exe -m qwen2.5-1.5b-instruct-q4_k_m.gguf -f data/corpus/0_html.txt -c 128 -t 8 && llama-perplexity.exe -m qwen2.5-1.5b-instruct-q4_k_m.gguf -f data/corpus/1_easy.txt -c 128 -t 8 && llama-perplexity.exe -m qwen2.5-1.5b-instruct-q4_k_m.gguf -f data/corpus/2_medium.txt -c 128 -t 8 && llama-perplexity.exe -m qwen2.5-1.5b-instruct-q4_k_m.gguf -f data/corpus/3_hard.txt -c 128 -t 8 && llama-perplexity.exe -m qwen2.5-1.5b-instruct-q4_k_m.gguf -f data/corpus/4_gibberish.txt -c 128 -t 8",
+  "prompt_version": null,
+  "seed": null,
+  "temperature": null,
+  "ctx": 128,
+  "threads": 8,
+  "corpus_files": [
+    "0_html.txt",
+    "1_easy.txt",
+    "2_medium.txt",
+    "3_hard.txt",
+    "4_gibberish.txt"
+  ]
+}

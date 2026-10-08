@@ -1,0 +1,17 @@
+pair_id,category,reference,response,exact_match,bleu,rouge_l,cosine
+0,near_duplicate,The meeting starts at 10 a.m.,the meeting starts at 10 a.m.  ,1,1.0,1.0,1.0
+1,near_duplicate,The report is due on Friday.,The report is due on Friday,0,0.7598356856515925,1.0,0.9922415935668878
+2,near_duplicate,She bought three apples at the market.,She bought 3 apples at the market.,0,0.488923022434901,0.8571428571428571,0.9862284774298811
+3,paraphrase,How are you?,What's up?,0,0,0.0,0.7450789736978198
+4,paraphrase,The movie was extremely boring.,I found the film really dull.,0,0.03759340464156993,0.1818181818181818,0.862957432610651
+5,paraphrase,He left the company last year.,He quit his job at the firm a year ago.,0,0.027895820162122397,0.37499999999999994,0.8532755295915501
+6,paraphrase,Please close the door.,Could you shut the door?,0,0.0456496931223525,0.4444444444444445,0.8729245301333468
+7,meaning_flip,My cats scare the mice.,My cats eat the mice.,0,0.17141814854755813,0.8000000000000002,0.863833859566182
+8,meaning_flip,"Let's eat, grandma.",Let's eat grandma.,0,0.08621454270909737,1.0,0.9667598722760958
+9,meaning_flip,The dog bit the man.,The man bit the dog.,0,0.13414195051824768,0.6,0.980814466991113
+10,meaning_flip,Alice owes Bob ten dollars.,Bob owes Alice ten dollars.,0,0.15241468203455805,0.6,0.9845075242170499
+11,meaning_flip,The test results are positive.,The test results are not positive.,0,0.537284965911771,0.9090909090909091,0.9718831788461546
+12,meaning_flip,The bridge is safe to cross.,The bridge is not safe to cross.,0,0.3247290811215419,0.923076923076923,0.9722705345694359
+13,unrelated,The stock market fell sharply today.,My grandmother grows tomatoes in her garden.,0,0,0.0,0.6212522052439305
+14,unrelated,Photosynthesis converts light into chemical energy.,The train to Paris leaves at noon.,0,0,0.0,0.5217732355993829
+15,unrelated,Can you recommend a good book?,The bridge was painted red in 1990.,0,0,0.0,0.5324732295598014

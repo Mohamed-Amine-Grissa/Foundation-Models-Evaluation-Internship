@@ -15,9 +15,11 @@ def write_run_log(out_path: str, *, model_path: str, llama_build: str,
                    command: str, prompt_version: str | None = None,
                    seed: int | None = None, temperature: float | None = None,
                    extra: dict | None = None) -> None:
+    # Only the model filename is logged (the repo is public); the hash still
+    # identifies the exact file.
     log = {
         "timestamp": datetime.now(timezone.utc).isoformat(),
-        "model_path": model_path,
+        "model_file": Path(model_path).name,
         "model_sha256": sha256_of_file(model_path),
         "llama_build": llama_build,
         "command": command,

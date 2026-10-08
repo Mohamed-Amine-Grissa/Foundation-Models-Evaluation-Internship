@@ -25,6 +25,13 @@ def cosine_sim(a: list[float], b: list[float]) -> float:
     a, b = np.array(a), np.array(b)
     return float(np.dot(a, b) / (np.linalg.norm(a) * np.linalg.norm(b)))
 
+def pass_at_k(n: int, c: int, k: int) -> float:
+    """Unbiased pass@k estimator (Chen et al., 2021): 1 - C(n-c, k) / C(n, k),
+    with n samples generated and c of them passing all tests."""
+    if k > n:
+        raise ValueError(f"k={k} cannot exceed n={n}")
+    return 1.0 - math.comb(n - c, k) / math.comb(n, k)
+
 def parse_perplexity_output(raw_text: str) -> dict:
     """Strips ANSI color codes and extracts the PPL value + confidence interval
     from a saved llama-perplexity.exe run."""

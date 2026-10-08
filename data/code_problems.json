@@ -1,0 +1,74 @@
+[
+  {
+    "id": "is_palindrome",
+    "function_name": "is_palindrome",
+    "prompt": "Write a Python function with exactly this signature:\n    def is_palindrome(s: str) -> bool\nReturn the bool True if `s` reads the same forwards and backwards, otherwise the bool False.\nBefore comparing, convert letters to lowercase and remove every character that is not a letter or a digit (spaces, commas, colons and other punctuation are removed; digits are kept and compared like letters).\nEdge cases: the empty string counts as a palindrome. Mixed case, spaces and punctuation must not affect the result. Digits are significant: a digit that has no matching digit at the mirrored position makes the string not a palindrome, even if all the letters on their own would form one.\nExample: 'Was it a car or a cat I saw?' -> True.",
+    "tests": [
+      "assert is_palindrome('racecar') == True",
+      "assert is_palindrome('A man, a plan, a canal: Panama') == True",
+      "assert is_palindrome('hello') == False",
+      "assert is_palindrome('') == True",
+      "assert is_palindrome('Step on no pets 1') == False"
+    ]
+  },
+  {
+    "id": "fizzbuzz",
+    "function_name": "fizzbuzz",
+    "prompt": "Write a Python function with exactly this signature:\n    def fizzbuzz(n: int) -> list[str]\nReturn a list with one string for each integer i from 1 to n inclusive, in increasing order, so the list has length n.\nEach element is exactly: 'FizzBuzz' if i is divisible by both 3 and 5; otherwise 'Fizz' if i is divisible by 3; otherwise 'Buzz' if i is divisible by 5; otherwise str(i). Use exactly this capitalization, no spaces.\nEdge cases: when n is 1 the list contains a single element; when n is zero or negative return the empty list; multiples of 15 must give 'FizzBuzz', never 'Fizz' or 'Buzz'; the list length must equal n for every positive n.\nExample: fizzbuzz(10)[-3:] == ['8', 'Fizz', 'Buzz'].",
+    "tests": [
+      "assert fizzbuzz(1) == ['1']",
+      "assert fizzbuzz(5) == ['1', '2', 'Fizz', '4', 'Buzz']",
+      "assert fizzbuzz(15)[-1] == 'FizzBuzz'",
+      "assert len(fizzbuzz(30)) == 30",
+      "assert fizzbuzz(0) == []"
+    ]
+  },
+  {
+    "id": "second_largest",
+    "function_name": "second_largest",
+    "prompt": "Write a Python function with exactly this signature:\n    def second_largest(nums: list[int]) -> int | None\nReturn the second largest DISTINCT value in `nums` as an int. Duplicates count once: if the largest value appears several times, the answer is the next smaller value, not the largest one again.\nEdge cases: negative numbers are allowed and handled like any other int; the input may be unsorted and may contain repeated values anywhere; return None (do not raise an exception) when there are fewer than two distinct values, which includes the empty list and a list whose values are all equal. Do not modify the input list.\nExample: second_largest([10, 20, 20, 15]) == 15.",
+    "tests": [
+      "assert second_largest([3, 1, 4, 1, 5]) == 4",
+      "assert second_largest([5, 5, 4]) == 4",
+      "assert second_largest([7, 7, 7]) is None",
+      "assert second_largest([]) is None",
+      "assert second_largest([-2, -1]) == -2"
+    ]
+  },
+  {
+    "id": "run_length_encode",
+    "function_name": "run_length_encode",
+    "prompt": "Write a Python function with exactly this signature:\n    def run_length_encode(s: str) -> str\nReturn a string that replaces each maximal run of consecutive identical characters with that character immediately followed by the run length written in decimal, with no separators, keeping the runs in their original left-to-right order.\nEdge cases: every run gets a count, including runs of length 1; the same character appearing in two non-adjacent places forms two separate runs, each with its own count; a run of ten or more characters has its full multi-digit count written out; the empty string returns the empty string.\nExample: 'xxyzzz' -> 'x2y1z3'.",
+    "tests": [
+      "assert run_length_encode('aaabcc') == 'a3b1c2'",
+      "assert run_length_encode('') == ''",
+      "assert run_length_encode('a') == 'a1'",
+      "assert run_length_encode('abab') == 'a1b1a1b1'",
+      "assert run_length_encode('zzzzzzzzzzzz') == 'z12'"
+    ]
+  },
+  {
+    "id": "merge_intervals",
+    "function_name": "merge_intervals",
+    "prompt": "Write a Python function with exactly this signature:\n    def merge_intervals(intervals: list[list[int]]) -> list[list[int]]\nEach interval is a two-element list [start, end] with start <= end, describing a closed interval. Merge every group of overlapping intervals into one interval [min start, max end] and return a list of two-element lists (not tuples), sorted by start in increasing order.\nEdge cases: the input may be in any order; two intervals that only share an endpoint count as overlapping and must be merged; one interval may fully contain one or more others, which then disappear into it; intervals that do not overlap stay separate; the empty list returns the empty list.\nExample: merge_intervals([[4, 6], [1, 5], [9, 12]]) == [[1, 6], [9, 12]].",
+    "tests": [
+      "assert merge_intervals([[1, 3], [2, 6], [8, 10]]) == [[1, 6], [8, 10]]",
+      "assert merge_intervals([[1, 2], [2, 3]]) == [[1, 3]]",
+      "assert merge_intervals([[5, 7], [1, 2]]) == [[1, 2], [5, 7]]",
+      "assert merge_intervals([]) == []",
+      "assert merge_intervals([[1, 10], [2, 3], [4, 5]]) == [[1, 10]]"
+    ]
+  },
+  {
+    "id": "roman_to_int",
+    "function_name": "roman_to_int",
+    "prompt": "Write a Python function with exactly this signature:\n    def roman_to_int(s: str) -> int\n`s` is a valid Roman numeral in uppercase using I=1, V=5, X=10, L=50, C=100, D=500, M=1000. Return its value as an int. Symbols are added left to right, except that a smaller symbol placed directly before a larger one is subtracted instead of added (subtractive notation: I may precede V or X, X may precede L or C, and C may precede D or M).\nEdge cases: a numeral may consist of a single repeated symbol; a subtractive pair may appear on its own, at the start, or in the middle of a longer numeral, and a numeral may contain several subtractive pairs. You do not need to handle invalid input.\nExample: 'XLII' -> 42.",
+    "tests": [
+      "assert roman_to_int('III') == 3",
+      "assert roman_to_int('IV') == 4",
+      "assert roman_to_int('IX') == 9",
+      "assert roman_to_int('LVIII') == 58",
+      "assert roman_to_int('MCMXCIV') == 1994"
+    ]
+  }
+]

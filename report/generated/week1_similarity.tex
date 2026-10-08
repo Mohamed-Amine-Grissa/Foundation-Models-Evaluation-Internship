@@ -1,0 +1,22 @@
+\begin{tabular}{lp{3.4cm}p{3.4cm}crrr}
+\toprule
+Paire & Référence & Réponse & Exacte & BLEU & ROUGE-L & Cosinus \\
+\midrule
+P0 (Quasi-doublon) & The meeting starts at 10 a.m. & the meeting starts at 10 a.m.   & Oui & 1.000 & 1.000 & 1.000 \\
+P1 (Quasi-doublon) & The report is due on Friday. & The report is due on Friday & Non & 0.760 & 1.000 & 0.992 \\
+P2 (Quasi-doublon) & She bought three apples at the market. & She bought 3 apples at the market. & Non & 0.489 & 0.857 & 0.986 \\
+P3 (Paraphrase) & How are you? & What's up? & Non & 0.000 & 0.000 & 0.745 \\
+P4 (Paraphrase) & The movie was extremely boring. & I found the film really dull. & Non & 0.038 & 0.182 & 0.863 \\
+P5 (Paraphrase) & He left the company last year. & He quit his job at the firm a year ago. & Non & 0.028 & 0.375 & 0.853 \\
+P6 (Paraphrase) & Please close the door. & Could you shut the door? & Non & 0.046 & 0.444 & 0.873 \\
+P7 (Inversion de sens) & My cats scare the mice. & My cats eat the mice. & Non & 0.171 & 0.800 & 0.864 \\
+P8 (Inversion de sens) & Let's eat, grandma. & Let's eat grandma. & Non & 0.086 & 1.000 & 0.967 \\
+P9 (Inversion de sens) & The dog bit the man. & The man bit the dog. & Non & 0.134 & 0.600 & 0.981 \\
+P10 (Inversion de sens) & Alice owes Bob ten dollars. & Bob owes Alice ten dollars. & Non & 0.152 & 0.600 & 0.985 \\
+P11 (Inversion de sens) & The test results are positive. & The test results are not positive. & Non & 0.537 & 0.909 & 0.972 \\
+P12 (Inversion de sens) & The bridge is safe to cross. & The bridge is not safe to cross. & Non & 0.325 & 0.923 & 0.972 \\
+P13 (Sans rapport) & The stock market fell sharply today. & My grandmother grows tomatoes in her garden. & Non & 0.000 & 0.000 & 0.621 \\
+P14 (Sans rapport) & Photosynthesis converts light into chemical energy. & The train to Paris leaves at noon. & Non & 0.000 & 0.000 & 0.522 \\
+P15 (Sans rapport) & Can you recommend a good book? & The bridge was painted red in 1990. & Non & 0.000 & 0.000 & 0.532 \\
+\bottomrule
+\end{tabular}

@@ -1,0 +1,27 @@
+{
+  "timestamp": "2026-10-08T12:31:48.340624+00:00",
+  "model_file": "qwen2.5-1.5b-instruct-q4_k_m.gguf",
+  "model_sha256": "6a1a2eb6d15622bf3c96857206351ba97e1af16c30d7a74ee38970e434e9407e",
+  "llama_build": "10358 (030ebb558)",
+  "command": "python week1_metrics/functional_correctness/run_functional.py",
+  "prompt_version": "week1_functional_system_v1",
+  "seed": 1000,
+  "temperature": 0.8,
+  "chat_port": 8091,
+  "n_samples": 5,
+  "seeds": [
+    1000,
+    1001,
+    1002,
+    1003,
+    1004
+  ],
+  "ks": [
+    1,
+    5
+  ],
+  "max_tokens": 512,
+  "timeout_s": 5,
+  "problems_file": "data/code_problems.json",
+  "problems_sha256": "c5888d4c31398ca589edff2d05fe4ac976f59a620d5265dde9925100acadb703"
+}

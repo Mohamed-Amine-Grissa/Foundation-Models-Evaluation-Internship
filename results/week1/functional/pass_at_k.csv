@@ -1,0 +1,8 @@
+problem_id,n,c,pass@1,pass@5
+is_palindrome,5,5,1.0,1.0
+fizzbuzz,5,5,1.0,1.0
+second_largest,5,3,0.6,1.0
+run_length_encode,5,1,0.19999999999999996,1.0
+merge_intervals,5,5,1.0,1.0
+roman_to_int,5,5,1.0,1.0
+MEAN,30,24,0.7999999999999999,1.0
