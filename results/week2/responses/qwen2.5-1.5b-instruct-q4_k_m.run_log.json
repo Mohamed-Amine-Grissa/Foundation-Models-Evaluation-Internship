@@ -1,0 +1,15 @@
+{
+  "timestamp": "2026-10-21T22:44:55.620871+00:00",
+  "model_file": "qwen2.5-1.5b-instruct-q4_k_m.gguf",
+  "model_sha256": "6a1a2eb6d15622bf3c96857206351ba97e1af16c30d7a74ee38970e434e9407e",
+  "llama_build": "10358 (030ebb558)",
+  "command": "python week2_judge/generate_responses.py --model qwen2.5-1.5b-instruct-q4_k_m.gguf",
+  "prompt_version": "week2_generator_system_v1",
+  "seed": 42,
+  "temperature": 0.7,
+  "chat_port": 8091,
+  "max_tokens": 512,
+  "questions_file": "data/task/questions.jsonl",
+  "questions_sha256": "1abc76cf2a4e91696dea400bfbe59738fca34776faf5255b7bd88d677c79e497",
+  "n_questions": 20
+}

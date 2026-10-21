@@ -1,0 +1,360 @@
+﻿row_id,question,reference_answer,accepted_variants,response,human_label,human_note
+1,Sara has 3 times as many marbles as Tom. Together they have 48 marbles. How many marbles does Sara have?,36,thirty-six,"Let's denote the number of marbles Tom has as \( T \).
+
+Since Sara has 3 times as many marbles as Tom, Sara has \( 3T \) marbles.
+
+Together, they have 48 marbles, so we can write the equation:
+
+\[ T + 3T = 48 \]
+
+Combining like terms, we get:
+
+\[ 4T = 48 \]
+
+To find the number of marbles Tom has, we divide both sides by 4:
+
+\[ T = \frac{48}{4} = 12 \]
+
+So Tom has 12 marbles. Since Sara has 3 times as many marbles as Tom, Sara has:
+
+\[ 3T = 3 \times 12 = 36 \]
+
+Sara has 36 marbles.",,
+2,"Who wrote the novel ""Pride and Prejudice""?",Jane Austen,Austen,"The novel ""Pride and Prejudice"" was written by Jane Austen.",,
+3,"A rectangle has a perimeter of 30 cm, and its length is twice its width. What is its area, in square centimetres?",50,50 cm²; 50 cm^2; 50 square centimetres; 50 square centimeters,"To find the area of the rectangle, we need to first determine its dimensions. Let's denote the width of the rectangle as \( w \) cm and the length as \( l \) cm. According to the problem, the length is twice the width, so we have:
+
+\[ l = 2w \]
+
+The perimeter of a rectangle is given by the formula:
+
+\[ \text{Perimeter} = 2l + 2w \]
+
+We know the perimeter is 30 cm, so we can substitute the values we have:
+
+\[ 30 = 2l + 2w \]
+
+Substituting \( l = 2w \) into the equation:
+
+\[ 30 = 2(2w) + 2w \]
+\[ 30 = 4w + 2w \]
+\[ 30 = 6w \]
+
+Now, we solve for \( w \):
+
+\[ w = \frac{30}{6} = 5 \]
+
+So the width \( w \) is 5 cm. Since the length \( l \) is twice the width, we have:
+
+\[ l = 2 \times 5 = 10 \]
+
+The area \( A \) of a rectangle is given by the formula:
+
+\[ A = l \times w \]
+
+Substituting the values of \( l \) and \( w \):
+
+\[ A = 10 \times 5 = 50 \]
+
+Therefore, the area of the rectangle is 50 square centimeters. Final answer: 50.",,
+4,"A bat and a ball cost $1.30 in total. The bat costs $1.00 more than the ball. How much does the ball cost, in cents?",15,15 cents; $0.15; 0.15 dollars; fifteen,"Let's break this down step by step. 
+
+Let the cost of the ball be x cents. Since the bat costs $1.00 more than the ball, the cost of the bat is (x + 100) cents.
+
+The total cost of the bat and the ball is $1.30, which is 130 cents. So, we can set up the equation:
+
+x + (x + 100) = 130
+
+Combine like terms:
+
+2x + 100 = 130
+
+Subtract 100 from both sides:
+
+2x = 30
+
+Divide by 2:
+
+x = 15
+
+So, the ball costs 15 cents.
+
+Final answer: 15",,
+5,Which planet in our solar system is closest to the Sun?,Mercury,,"The planet in our solar system that is closest to the Sun is Mercury.
+
+Final answer: Mercury.",,
+6,"At sea level, what is the boiling point of pure water in degrees Celsius?",100,100 °C; 100 degrees Celsius; one hundred,Final answer: 100.,,
+7,"A rectangle has a perimeter of 30 cm, and its length is twice its width. What is its area, in square centimetres?",50,50 cm²; 50 cm^2; 50 square centimetres; 50 square centimeters,"Let's denote the width as 'w' and the length as 'l'. Since the length is twice the width, we can write:
+
+l = 2w
+
+The perimeter of a rectangle is given by the formula: P = 2(l + w)
+
+We know the perimeter is 30 cm, so:
+
+30 = 2(l + w)
+30 = 2(2w + w)
+30 = 2(3w)
+30 = 6w
+
+Now, divide both sides by 6:
+
+w = 5
+
+Now that we know the width, we can find the length:
+
+l = 2w
+l = 2(5)
+l = 10
+
+Now, we can find the area of the rectangle using the formula: A = l * w
+
+A = 10 * 5
+A = 50
+
+Final answer: 50",,
+8,"A jacket costs $80. It is discounted by 25%, and then a 10% sales tax is added to the discounted price. What is the final price, in dollars?",66,66.00; $66; $66.00; 66 dollars,"First, we calculate the discount on the jacket. A 25% discount on $80 is calculated as follows:
+\[ 25\% \text{ of } 80 = 0.25 \times 80 = 20 \]
+So, the jacket is discounted by $20, making the new price:
+\[ 80 - 20 = 60 \]
+
+Next, we calculate the sales tax on the discounted price. A 10% sales tax on $60 is:
+\[ 10\% \text{ of } 60 = 0.10 \times 60 = 6 \]
+
+Adding the sales tax to the discounted price gives us the final price:
+\[ 60 + 6 = 66 \]
+
+Final answer: $66.",,
+9,"At sea level, what is the boiling point of pure water in degrees Celsius?",100,100 °C; 100 degrees Celsius; one hundred,"At sea level, the boiling point of pure water is 100 degrees Celsius.",,
+10,Anna is older than Ben. Ben is older than Carl. Dana is younger than Carl. Who is the youngest of the four?,Dana,,"To determine the youngest, we need to analyze the given information: 
+
+- Anna is older than Ben.
+- Ben is older than Carl.
+- Dana is younger than Carl.
+
+From the information, we can deduce the order from oldest to youngest: Anna > Ben > Carl > Dana.
+
+The youngest is Dana.
+
+Final answer: Dana.",,
+11,How many sides does a hexagon have?,6,six,"A hexagon has 6 sides.
+
+Final answer: 6",,
+12,A train leaves at 09:45 and the journey takes 2 hours and 50 minutes. At what time does it arrive? Give the time in 24-hour format (HH:MM).,12:35,12:35 pm; 12:35 p.m.,"To find the arrival time, we need to add 2 hours and 50 minutes to the departure time of 09:45.
+
+Departure time: 09:45
+Adding 2 hours: 11:45
+Adding 50 minutes: 12:35
+
+Final answer: 12:35",,
+13,"Who wrote the novel ""Pride and Prejudice""?",Jane Austen,Austen,"The novel ""Pride and Prejudice"" was written by Jane Austen. 
+
+Final answer: Jane Austen.",,
+14,A patch of lily pads on a lake doubles in size every day. It takes 36 days for the patch to cover the whole lake. How many days does it take for the patch to cover half of the lake?,35,35 days; thirty-five,"The patch of lily pads doubles in size every day. Since it takes 36 days for the patch to cover the whole lake, it would take half the number of days to cover half the lake. Therefore, it would take 36 days / 2 = 18 days for the patch to cover half of the lake. Final answer: 18.",,
+15,Anna is older than Ben. Ben is older than Carl. Dana is younger than Carl. Who is the youngest of the four?,Dana,,"Based on the information provided:
+
+1. Anna is older than Ben.
+2. Ben is older than Carl.
+3. Dana is younger than Carl.
+
+From these statements, we can deduce the following order:
+
+1. Carl is older than Ben.
+2. Carl is older than Dana.
+3. Anna is older than Ben, and Ben is older than Carl, so Anna is the youngest.
+
+Final answer: Dana is the youngest of the four.",,
+16,Today is Wednesday. What day of the week will it be 100 days from today?,Friday,,"To find out the day of the week 100 days from now, we need to calculate the remainder when 100 is divided by 7 (the number of days in a week).
+
+100 ÷ 7 = 14 remainder 2
+
+This means that 100 days from now is equal to 14 weeks (98 days) and 2 extra days.
+
+Since today is Wednesday, 98 days from now will be the same day of the week, which is Wednesday.
+
+Adding the 2 extra days, we get Thursday.
+
+Final answer: Thursday.",,
+17,An empty tank holds 120 litres. A pipe fills it at 8 litres per minute while a leak drains 2 litres per minute at the same time. How many minutes does it take to fill the tank?,20,20 minutes; twenty,"To find the time it takes to fill the tank, we first need to determine the net rate at which the tank is being filled. The pipe fills the tank at 8 litres per minute, and the leak drains 2 litres per minute. 
+
+The net rate is 8 - 2 = 6 litres per minute.
+
+Now, we can divide the total capacity of the tank (120 litres) by the net rate (6 litres per minute) to find the time it takes to fill the tank.
+
+Time = Total capacity / Net rate
+Time = 120 litres / 6 litres per minute
+Time = 20 minutes
+
+Final answer: 20",,
+18,In what year did the Second World War end?,1945,,"The Second World War ended in 1945. It officially came to an end on two separate dates: 
+1. May 8, 1945, when Germany surrendered to the Allied Powers, marking V-E Day (Victory in Europe Day).
+2. September 2, 1945, when Japan surrendered to the Allied Powers, marking V-J Day (Victory over Japan Day), effectively ending the war in the Pacific.
+
+Final answer: 1945.",,
+19,"A car uses 6 litres of fuel per 100 km, and fuel costs $1.50 per litre. How much does the fuel cost for a 250 km trip, in dollars?",22.50,22.5; $22.50; $22.5; 22.50 dollars,"To calculate the fuel cost for a 250 km trip, follow these steps:
+
+1. Determine the total fuel needed for the trip:
+   - The car uses 6 litres of fuel per 100 km.
+   - For a 250 km trip, the car would need \( \frac{250}{100} \times 6 = 15 \) litres of fuel.
+
+2. Calculate the total cost of the fuel:
+   - Fuel costs $1.50 per litre.
+   - For 15 litres, the total cost would be \( 15 \times 1.50 = 22.50 \) dollars.
+
+So, the fuel cost for a 250 km trip is $22.50.",,
+20,What is the capital city of Australia?,Canberra,,"The capital city of Australia is Canberra. 
+
+Final answer: Canberra.",,
+21,What is the chemical symbol for the element gold?,Au,,"The chemical symbol for the element gold is Au.
+
+Final answer: Au",,
+22,"A jacket costs $80. It is discounted by 25%, and then a 10% sales tax is added to the discounted price. What is the final price, in dollars?",66,66.00; $66; $66.00; 66 dollars,"To find the final price, we need to calculate the discounted price first.
+
+Discounted price = Original price - Discount
+Discount = 25% of $80
+= 0.25 * $80
+= $20
+
+Discounted price = $80 - $20
+= $60
+
+Now, we add a 10% sales tax to the discounted price.
+Sales tax = 10% of $60
+= 0.10 * $60
+= $6
+
+Final price = Discounted price + Sales tax
+= $60 + $6
+= $66
+
+Final answer: $66",,
+23,"If it takes 6 machines 6 minutes to make 6 widgets, how many minutes would it take 90 machines to make 90 widgets?",6,6 minutes; six,"To solve this problem, we need to find the rate at which the machines produce widgets. 
+
+6 machines produce 6 widgets in 6 minutes, so the rate of production is 1 widget per minute per machine.
+
+If 90 machines are working, the total production rate is 90 machines * 1 widget/minute/machine = 90 widgets/minute.
+
+Therefore, it would take 90 machines 1 minute to produce 90 widgets.
+
+Final answer: 1",,
+24,Sara has 3 times as many marbles as Tom. Together they have 48 marbles. How many marbles does Sara have?,36,thirty-six,"To solve this problem, let's use variables. Let's say Tom has x marbles. Since Sara has 3 times as many marbles as Tom, Sara has 3x marbles.
+
+We know that together they have 48 marbles. So, we can set up the equation:
+
+x + 3x = 48
+
+Combine like terms:
+
+4x = 48
+
+Divide both sides by 4:
+
+x = 12
+
+So Tom has 12 marbles. Now we can find out how many marbles Sara has by multiplying Tom's marbles by 3:
+
+3x = 3(12) = 36
+
+Final answer: Sara has 36 marbles.",,
+25,A farmer has 17 sheep. All but 9 of them run away. How many sheep does the farmer have left?,9,9 sheep; nine,The farmer has 9 sheep left.,,
+26,"A bat and a ball cost $1.30 in total. The bat costs $1.00 more than the ball. How much does the ball cost, in cents?",15,15 cents; $0.15; 0.15 dollars; fifteen,"Let's denote the cost of the ball as \( x \) cents and the cost of the bat as \( x + 100 \) cents (since the bat costs $1.00 more than the ball, which is 100 cents). According to the problem, the total cost of both items is $1.30, which is 130 cents. So we can set up the following equation:
+
+\[ x + (x + 100) = 130 \]
+
+Simplifying the equation:
+
+\[ 2x + 100 = 130 \]
+
+Subtract 100 from both sides:
+
+\[ 2x = 30 \]
+
+Divide both sides by 2:
+
+\[ x = 15 \]
+
+So, the ball costs 15 cents. The final answer is: 15.",,
+27,A farmer has 17 sheep. All but 9 of them run away. How many sheep does the farmer have left?,9,9 sheep; nine,"To find out how many sheep the farmer has left, we need to subtract the number of sheep that ran away (9) from the total number of sheep (17). 
+
+17 (total sheep) - 9 (sheep that ran away) = 8
+
+Final answer: 8",,
+28,"A car uses 6 litres of fuel per 100 km, and fuel costs $1.50 per litre. How much does the fuel cost for a 250 km trip, in dollars?",22.50,22.5; $22.50; $22.5; 22.50 dollars,"To find the cost of the fuel for the 250 km trip, first calculate the amount of fuel used for that distance. 
+
+The car uses 6 litres of fuel per 100 km. To find out how much fuel is used for 250 km, divide 250 by 100, then multiply by 6. 
+
+250 / 100 = 2.5
+2.5 * 6 = 15
+
+Now, multiply the fuel used by the cost per litre to find the total cost. 
+
+15 * $1.50 = $22.50
+
+Final answer: $22.50",,
+29,What is the capital city of Australia?,Canberra,,The capital city of Australia is Canberra.,,
+30,What is the chemical symbol for the element gold?,Au,,The chemical symbol for the element gold is Au.,,
+31,A patch of lily pads on a lake doubles in size every day. It takes 36 days for the patch to cover the whole lake. How many days does it take for the patch to cover half of the lake?,35,35 days; thirty-five,"To solve this problem, we need to understand that the patch doubles in size every day. 
+
+If it takes 36 days for the patch to cover the whole lake, it means that on the 35th day, the patch covered half of the lake. 
+
+So, it takes 35 days for the patch to cover half of the lake.
+
+Final answer: 35.",,
+32,"A shop sells pencils at 3 for $1.20. At the same price per pencil, how much do 10 pencils cost, in dollars?",4,4.00; $4; $4.00; 4 dollars,"To find the cost of 10 pencils, first find the cost of one pencil. 
+
+Cost of 3 pencils = $1.20
+Cost of 1 pencil = $1.20 / 3 = $0.40
+
+Cost of 10 pencils = 10 * $0.40 = $4.00
+
+Final answer: $4.00",,
+33,Which planet in our solar system is closest to the Sun?,Mercury,,Mercury is the planet in our solar system that is closest to the Sun.,,
+34,In what year did the Second World War end?,1945,,"The Second World War ended on September 2, 1945, with the formal surrender of Japan, marking the end of one of the most devastating conflicts in human history.",,
+35,A train leaves at 09:45 and the journey takes 2 hours and 50 minutes. At what time does it arrive? Give the time in 24-hour format (HH:MM).,12:35,12:35 pm; 12:35 p.m.,"The train leaves at 09:45 and the journey takes 2 hours and 50 minutes. To find the arrival time, we need to add the duration to the departure time.
+
+First, let's break down the journey time:
+- 2 hours and 50 minutes is equivalent to 170 minutes.
+
+Now, let's add this to the departure time:
+09:45 + 170 minutes = 11:15
+
+So, the train arrives at 11:15 in the 24-hour format.
+
+Final answer: 11:15",,
+36,Today is Wednesday. What day of the week will it be 100 days from today?,Friday,,"To determine the day of the week 100 days from today (which is Wednesday), we need to know that a week has 7 days. Therefore, we can find the remainder when 100 is divided by 7 to determine the number of days past a whole number of weeks.
+
+100 ÷ 7 = 14 weeks and 2 days remainder.
+
+This means that 100 days from today is the same as 2 days from today. Since today is Wednesday, 2 days from now will be:
+
+Wednesday + 1 day = Thursday
+
+Thursday. Final answer: Thursday.",,
+37,An empty tank holds 120 litres. A pipe fills it at 8 litres per minute while a leak drains 2 litres per minute at the same time. How many minutes does it take to fill the tank?,20,20 minutes; twenty,"To determine how long it takes to fill the tank, we need to account for both the filling rate and the leaking rate. Here's the step-by-step calculation:
+
+1. **Filling Rate**: The pipe fills the tank at 8 litres per minute.
+2. **Leaking Rate**: The leak drains the tank at 2 litres per minute.
+3. **Net Rate of Fill**: The net rate at which the tank is being filled is the difference between the filling rate and the leaking rate:
+   \[
+   8 \text{ litres/minute} - 2 \text{ litres/minute} = 6 \text{ litres/minute}
+   \]
+4. **Time to Fill the Tank**: Since the tank holds 120 litres and the net rate of fill is 6 litres per minute, the time required to fill the tank is:
+   \[
+   \frac{120 \text{ litres}}{6 \text{ litres/minute}} = 20 \text{ minutes}
+   \]
+
+Therefore, it takes 20 minutes to fill the tank.",,
+38,"If it takes 6 machines 6 minutes to make 6 widgets, how many minutes would it take 90 machines to make 90 widgets?",6,6 minutes; six,"If 6 machines can make 6 widgets in 6 minutes, it means each machine is making 1 widget in 6 minutes.
+
+With 90 machines working simultaneously, each machine would still be making 1 widget in 6 minutes. Therefore, 90 machines can make 90 widgets in the same 6 minutes.
+
+Final answer: 6 minutes",,
+39,How many sides does a hexagon have?,6,six,A hexagon has 6 sides.,,
+40,"A shop sells pencils at 3 for $1.20. At the same price per pencil, how much do 10 pencils cost, in dollars?",4,4.00; $4; $4.00; 4 dollars,"First, let's determine the price per pencil. If 3 pencils cost $1.20, then we can find the price of one pencil by dividing $1.20 by 3:
+
+\[ \text{Price per pencil} = \frac{1.20}{3} = 0.40 \]
+
+Now, to find the cost of 10 pencils at this price, we multiply the price per pencil by 10:
+
+\[ \text{Cost of 10 pencils} = 0.40 \times 10 = 4.00 \]
+
+So, 10 pencils cost $4.00.",,
