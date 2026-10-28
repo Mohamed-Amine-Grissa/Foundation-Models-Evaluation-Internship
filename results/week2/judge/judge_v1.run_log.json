@@ -1,0 +1,45 @@
+{
+  "timestamp": "2026-10-28T18:28:53.356448+00:00",
+  "model_file": "Phi-3.5-mini-instruct-Q4_K_M.gguf",
+  "model_sha256": "e4165e3a71af97f1b4820da61079826d8752a2088e313af0c7d346796c38eff5",
+  "llama_build": "10358 (030ebb558)",
+  "command": "python week2_judge/run_judge.py",
+  "prompt_version": "judge_v1",
+  "seed": 42,
+  "temperature": 0.0,
+  "chat_port": 8091,
+  "n_predict": 256,
+  "endpoint": "/apply-template + /completion",
+  "constrained_output": "json_schema",
+  "verdict_schema": {
+    "type": "object",
+    "properties": {
+      "verdict": {
+        "type": "string",
+        "enum": [
+          "correct",
+          "incorrect"
+        ]
+      },
+      "reason": {
+        "type": "string"
+      }
+    },
+    "required": [
+      "verdict",
+      "reason"
+    ],
+    "additionalProperties": false
+  },
+  "prompt_sha256": "795d248eed9a78955b69702fc7b95e24c33ab02ee143b189ce49ec5357e15fef",
+  "rubric_sha256": "5531248e0d73af3484355cfdaab62cf7892600f0598bc426ff33ee081be34956",
+  "sheet_file": "results/week2/labeling/to_label.csv",
+  "sheet_columns_shown": [
+    "question",
+    "reference_answer",
+    "accepted_variants",
+    "response"
+  ],
+  "n_rows": 60,
+  "n_parse_failures": 0
+}

@@ -1,0 +1,130 @@
+{
+  "inputs": {
+    "human_labels": "results/week2/labeling/to_label.csv",
+    "answer_key": "results/week2/labeling/answer_key.json",
+    "judge_verdicts": "results/week2/judge/judge_v1.jsonl"
+  },
+  "label_mapping": {
+    "correct": "correct",
+    "incorrect": "incorrect"
+  },
+  "n_rows": 60,
+  "n_used": 60,
+  "excluded": [],
+  "overall": {
+    "n": 60,
+    "raw_agreement": 0.9,
+    "expected_agreement": 0.7172222222222221,
+    "cohen_kappa": 0.6463654223968568,
+    "confusion_matrix": {
+      "judge_correct": {
+        "human_correct": 47,
+        "human_incorrect": 6
+      },
+      "judge_incorrect": {
+        "human_correct": 0,
+        "human_incorrect": 7
+      }
+    }
+  },
+  "by_category": {
+    "factual": {
+      "n": 21,
+      "raw_agreement": 1.0,
+      "expected_agreement": 1.0,
+      "cohen_kappa": null,
+      "confusion_matrix": {
+        "judge_correct": {
+          "human_correct": 21,
+          "human_incorrect": 0
+        },
+        "judge_incorrect": {
+          "human_correct": 0,
+          "human_incorrect": 0
+        }
+      }
+    },
+    "word_problem": {
+      "n": 27,
+      "raw_agreement": 0.9259259259259259,
+      "expected_agreement": 0.6954732510288065,
+      "cohen_kappa": 0.7567567567567568,
+      "confusion_matrix": {
+        "judge_correct": {
+          "human_correct": 21,
+          "human_incorrect": 2
+        },
+        "judge_incorrect": {
+          "human_correct": 0,
+          "human_incorrect": 4
+        }
+      }
+    },
+    "trap": {
+      "n": 12,
+      "raw_agreement": 0.6666666666666666,
+      "expected_agreement": 0.45833333333333337,
+      "cohen_kappa": 0.3846153846153845,
+      "confusion_matrix": {
+        "judge_correct": {
+          "human_correct": 5,
+          "human_incorrect": 4
+        },
+        "judge_incorrect": {
+          "human_correct": 0,
+          "human_incorrect": 3
+        }
+      }
+    }
+  },
+  "by_model": {
+    "qwen2.5-1.5b-instruct-q4_k_m": {
+      "n": 20,
+      "raw_agreement": 0.9,
+      "expected_agreement": 0.7400000000000001,
+      "cohen_kappa": 0.6153846153846153,
+      "confusion_matrix": {
+        "judge_correct": {
+          "human_correct": 16,
+          "human_incorrect": 2
+        },
+        "judge_incorrect": {
+          "human_correct": 0,
+          "human_incorrect": 2
+        }
+      }
+    },
+    "qwen2.5-0.5b-instruct-q4_k_m": {
+      "n": 20,
+      "raw_agreement": 0.9,
+      "expected_agreement": 0.6199999999999999,
+      "cohen_kappa": 0.7368421052631581,
+      "confusion_matrix": {
+        "judge_correct": {
+          "human_correct": 14,
+          "human_incorrect": 2
+        },
+        "judge_incorrect": {
+          "human_correct": 0,
+          "human_incorrect": 4
+        }
+      }
+    },
+    "Llama-3.2-3B-Instruct-Q4_K_M": {
+      "n": 20,
+      "raw_agreement": 0.9,
+      "expected_agreement": 0.815,
+      "cohen_kappa": 0.45945945945945976,
+      "confusion_matrix": {
+        "judge_correct": {
+          "human_correct": 17,
+          "human_incorrect": 2
+        },
+        "judge_incorrect": {
+          "human_correct": 0,
+          "human_incorrect": 1
+        }
+      }
+    }
+  }
+}

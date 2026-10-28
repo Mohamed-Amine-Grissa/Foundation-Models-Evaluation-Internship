@@ -1,0 +1,23 @@
+You are grading one response to one question. Decide whether the response gives the correct final answer, following the rubric below exactly.
+
+=== RUBRIC ===
+{{RUBRIC}}
+=== END OF RUBRIC ===
+
+=== QUESTION ===
+{{QUESTION}}
+
+=== REFERENCE ANSWER ===
+{{REFERENCE_ANSWER}}
+
+=== ACCEPTED VARIANTS ===
+{{ACCEPTED_VARIANTS}}
+
+=== RESPONSE TO GRADE ===
+{{RESPONSE}}
+=== END OF RESPONSE ===
+
+Apply the rubric: identify the final answer of the response (section 1), compare it with the reference answer and accepted variants (section 2), and use the specific cases (section 3) where they apply.
+
+Reply with a JSON object only, no other text, in this exact form:
+{"verdict": "correct" or "incorrect", "reason": "<one or two sentences explaining the verdict>"}

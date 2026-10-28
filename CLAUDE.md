@@ -18,3 +18,4 @@
   before continuing.
 - Model paths, ports, and local environment facts live in config.toml — read
   from there, never hardcode a path.
+- Always run Python through `.venv\Scripts\python.exe`.
