@@ -1,202 +1,302 @@
 {
   "1": {
-    "question_id": "w03",
-    "model_file": "qwen2.5-1.5b-instruct-q4_k_m.gguf",
+    "question_id": "t03",
+    "model_file": "Llama-3.2-3B-Instruct-Q4_K_M.gguf",
     "finish_reason": "stop"
   },
   "2": {
     "question_id": "f04",
-    "model_file": "qwen2.5-1.5b-instruct-q4_k_m.gguf",
+    "model_file": "Llama-3.2-3B-Instruct-Q4_K_M.gguf",
     "finish_reason": "stop"
   },
   "3": {
-    "question_id": "w04",
-    "model_file": "qwen2.5-1.5b-instruct-q4_k_m.gguf",
+    "question_id": "w08",
+    "model_file": "qwen2.5-0.5b-instruct-q4_k_m.gguf",
     "finish_reason": "stop"
   },
   "4": {
-    "question_id": "t01",
-    "model_file": "Llama-3.2-3B-Instruct-Q4_K_M.gguf",
+    "question_id": "w05",
+    "model_file": "qwen2.5-1.5b-instruct-q4_k_m.gguf",
     "finish_reason": "stop"
   },
   "5": {
-    "question_id": "f06",
-    "model_file": "Llama-3.2-3B-Instruct-Q4_K_M.gguf",
+    "question_id": "t01",
+    "model_file": "qwen2.5-1.5b-instruct-q4_k_m.gguf",
     "finish_reason": "stop"
   },
   "6": {
-    "question_id": "f05",
+    "question_id": "f01",
     "model_file": "Llama-3.2-3B-Instruct-Q4_K_M.gguf",
     "finish_reason": "stop"
   },
   "7": {
-    "question_id": "w04",
-    "model_file": "Llama-3.2-3B-Instruct-Q4_K_M.gguf",
+    "question_id": "w09",
+    "model_file": "qwen2.5-0.5b-instruct-q4_k_m.gguf",
     "finish_reason": "stop"
   },
   "8": {
-    "question_id": "w05",
-    "model_file": "qwen2.5-1.5b-instruct-q4_k_m.gguf",
+    "question_id": "t03",
+    "model_file": "qwen2.5-0.5b-instruct-q4_k_m.gguf",
     "finish_reason": "stop"
   },
   "9": {
-    "question_id": "f05",
-    "model_file": "qwen2.5-1.5b-instruct-q4_k_m.gguf",
+    "question_id": "w07",
+    "model_file": "Llama-3.2-3B-Instruct-Q4_K_M.gguf",
     "finish_reason": "stop"
   },
   "10": {
-    "question_id": "w06",
-    "model_file": "Llama-3.2-3B-Instruct-Q4_K_M.gguf",
+    "question_id": "t04",
+    "model_file": "qwen2.5-1.5b-instruct-q4_k_m.gguf",
     "finish_reason": "stop"
   },
   "11": {
-    "question_id": "f02",
-    "model_file": "Llama-3.2-3B-Instruct-Q4_K_M.gguf",
+    "question_id": "w03",
+    "model_file": "qwen2.5-1.5b-instruct-q4_k_m.gguf",
     "finish_reason": "stop"
   },
   "12": {
-    "question_id": "w02",
+    "question_id": "t01",
     "model_file": "Llama-3.2-3B-Instruct-Q4_K_M.gguf",
     "finish_reason": "stop"
   },
   "13": {
-    "question_id": "f04",
-    "model_file": "Llama-3.2-3B-Instruct-Q4_K_M.gguf",
-    "finish_reason": "stop"
-  },
-  "14": {
-    "question_id": "t03",
-    "model_file": "qwen2.5-1.5b-instruct-q4_k_m.gguf",
-    "finish_reason": "stop"
-  },
-  "15": {
-    "question_id": "w06",
-    "model_file": "qwen2.5-1.5b-instruct-q4_k_m.gguf",
-    "finish_reason": "stop"
-  },
-  "16": {
-    "question_id": "w08",
-    "model_file": "Llama-3.2-3B-Instruct-Q4_K_M.gguf",
-    "finish_reason": "stop"
-  },
-  "17": {
-    "question_id": "w09",
-    "model_file": "Llama-3.2-3B-Instruct-Q4_K_M.gguf",
-    "finish_reason": "stop"
-  },
-  "18": {
-    "question_id": "f07",
-    "model_file": "Llama-3.2-3B-Instruct-Q4_K_M.gguf",
-    "finish_reason": "stop"
-  },
-  "19": {
-    "question_id": "w07",
-    "model_file": "qwen2.5-1.5b-instruct-q4_k_m.gguf",
-    "finish_reason": "stop"
-  },
-  "20": {
-    "question_id": "f03",
-    "model_file": "Llama-3.2-3B-Instruct-Q4_K_M.gguf",
-    "finish_reason": "stop"
-  },
-  "21": {
-    "question_id": "f01",
-    "model_file": "Llama-3.2-3B-Instruct-Q4_K_M.gguf",
-    "finish_reason": "stop"
-  },
-  "22": {
     "question_id": "w05",
     "model_file": "Llama-3.2-3B-Instruct-Q4_K_M.gguf",
     "finish_reason": "stop"
   },
-  "23": {
-    "question_id": "t02",
+  "14": {
+    "question_id": "f06",
+    "model_file": "qwen2.5-0.5b-instruct-q4_k_m.gguf",
+    "finish_reason": "stop"
+  },
+  "15": {
+    "question_id": "w04",
     "model_file": "Llama-3.2-3B-Instruct-Q4_K_M.gguf",
     "finish_reason": "stop"
   },
-  "24": {
+  "16": {
+    "question_id": "w03",
+    "model_file": "qwen2.5-0.5b-instruct-q4_k_m.gguf",
+    "finish_reason": "stop"
+  },
+  "17": {
+    "question_id": "f04",
+    "model_file": "qwen2.5-1.5b-instruct-q4_k_m.gguf",
+    "finish_reason": "stop"
+  },
+  "18": {
+    "question_id": "f02",
+    "model_file": "Llama-3.2-3B-Instruct-Q4_K_M.gguf",
+    "finish_reason": "stop"
+  },
+  "19": {
+    "question_id": "w04",
+    "model_file": "qwen2.5-0.5b-instruct-q4_k_m.gguf",
+    "finish_reason": "stop"
+  },
+  "20": {
+    "question_id": "f05",
+    "model_file": "qwen2.5-1.5b-instruct-q4_k_m.gguf",
+    "finish_reason": "stop"
+  },
+  "21": {
     "question_id": "w03",
     "model_file": "Llama-3.2-3B-Instruct-Q4_K_M.gguf",
     "finish_reason": "stop"
   },
-  "25": {
-    "question_id": "t04",
+  "22": {
+    "question_id": "w04",
     "model_file": "qwen2.5-1.5b-instruct-q4_k_m.gguf",
+    "finish_reason": "stop"
+  },
+  "23": {
+    "question_id": "t04",
+    "model_file": "qwen2.5-0.5b-instruct-q4_k_m.gguf",
+    "finish_reason": "stop"
+  },
+  "24": {
+    "question_id": "f03",
+    "model_file": "Llama-3.2-3B-Instruct-Q4_K_M.gguf",
+    "finish_reason": "stop"
+  },
+  "25": {
+    "question_id": "f02",
+    "model_file": "qwen2.5-0.5b-instruct-q4_k_m.gguf",
     "finish_reason": "stop"
   },
   "26": {
-    "question_id": "t01",
-    "model_file": "qwen2.5-1.5b-instruct-q4_k_m.gguf",
+    "question_id": "f05",
+    "model_file": "Llama-3.2-3B-Instruct-Q4_K_M.gguf",
     "finish_reason": "stop"
   },
   "27": {
-    "question_id": "t04",
-    "model_file": "Llama-3.2-3B-Instruct-Q4_K_M.gguf",
-    "finish_reason": "stop"
-  },
-  "28": {
-    "question_id": "w07",
-    "model_file": "Llama-3.2-3B-Instruct-Q4_K_M.gguf",
-    "finish_reason": "stop"
-  },
-  "29": {
-    "question_id": "f03",
-    "model_file": "qwen2.5-1.5b-instruct-q4_k_m.gguf",
-    "finish_reason": "stop"
-  },
-  "30": {
     "question_id": "f01",
     "model_file": "qwen2.5-1.5b-instruct-q4_k_m.gguf",
     "finish_reason": "stop"
   },
-  "31": {
-    "question_id": "t03",
+  "28": {
+    "question_id": "f05",
+    "model_file": "qwen2.5-0.5b-instruct-q4_k_m.gguf",
+    "finish_reason": "stop"
+  },
+  "29": {
+    "question_id": "f06",
     "model_file": "Llama-3.2-3B-Instruct-Q4_K_M.gguf",
     "finish_reason": "stop"
   },
+  "30": {
+    "question_id": "w06",
+    "model_file": "qwen2.5-0.5b-instruct-q4_k_m.gguf",
+    "finish_reason": "stop"
+  },
+  "31": {
+    "question_id": "t03",
+    "model_file": "qwen2.5-1.5b-instruct-q4_k_m.gguf",
+    "finish_reason": "stop"
+  },
   "32": {
-    "question_id": "w01",
+    "question_id": "w02",
     "model_file": "Llama-3.2-3B-Instruct-Q4_K_M.gguf",
     "finish_reason": "stop"
   },
   "33": {
-    "question_id": "f06",
-    "model_file": "qwen2.5-1.5b-instruct-q4_k_m.gguf",
+    "question_id": "t04",
+    "model_file": "Llama-3.2-3B-Instruct-Q4_K_M.gguf",
     "finish_reason": "stop"
   },
   "34": {
     "question_id": "f07",
-    "model_file": "qwen2.5-1.5b-instruct-q4_k_m.gguf",
+    "model_file": "Llama-3.2-3B-Instruct-Q4_K_M.gguf",
     "finish_reason": "stop"
   },
   "35": {
     "question_id": "w02",
-    "model_file": "qwen2.5-1.5b-instruct-q4_k_m.gguf",
+    "model_file": "qwen2.5-0.5b-instruct-q4_k_m.gguf",
     "finish_reason": "stop"
   },
   "36": {
-    "question_id": "w08",
+    "question_id": "w06",
     "model_file": "qwen2.5-1.5b-instruct-q4_k_m.gguf",
     "finish_reason": "stop"
   },
   "37": {
     "question_id": "w09",
-    "model_file": "qwen2.5-1.5b-instruct-q4_k_m.gguf",
+    "model_file": "Llama-3.2-3B-Instruct-Q4_K_M.gguf",
     "finish_reason": "stop"
   },
   "38": {
+    "question_id": "f03",
+    "model_file": "qwen2.5-0.5b-instruct-q4_k_m.gguf",
+    "finish_reason": "stop"
+  },
+  "39": {
+    "question_id": "w06",
+    "model_file": "Llama-3.2-3B-Instruct-Q4_K_M.gguf",
+    "finish_reason": "stop"
+  },
+  "40": {
+    "question_id": "w07",
+    "model_file": "qwen2.5-0.5b-instruct-q4_k_m.gguf",
+    "finish_reason": "stop"
+  },
+  "41": {
+    "question_id": "w07",
+    "model_file": "qwen2.5-1.5b-instruct-q4_k_m.gguf",
+    "finish_reason": "stop"
+  },
+  "42": {
+    "question_id": "f07",
+    "model_file": "qwen2.5-0.5b-instruct-q4_k_m.gguf",
+    "finish_reason": "stop"
+  },
+  "43": {
+    "question_id": "t02",
+    "model_file": "qwen2.5-0.5b-instruct-q4_k_m.gguf",
+    "finish_reason": "stop"
+  },
+  "44": {
+    "question_id": "f03",
+    "model_file": "qwen2.5-1.5b-instruct-q4_k_m.gguf",
+    "finish_reason": "stop"
+  },
+  "45": {
+    "question_id": "w01",
+    "model_file": "Llama-3.2-3B-Instruct-Q4_K_M.gguf",
+    "finish_reason": "stop"
+  },
+  "46": {
+    "question_id": "t02",
+    "model_file": "Llama-3.2-3B-Instruct-Q4_K_M.gguf",
+    "finish_reason": "stop"
+  },
+  "47": {
+    "question_id": "f06",
+    "model_file": "qwen2.5-1.5b-instruct-q4_k_m.gguf",
+    "finish_reason": "stop"
+  },
+  "48": {
+    "question_id": "w08",
+    "model_file": "Llama-3.2-3B-Instruct-Q4_K_M.gguf",
+    "finish_reason": "stop"
+  },
+  "49": {
+    "question_id": "w05",
+    "model_file": "qwen2.5-0.5b-instruct-q4_k_m.gguf",
+    "finish_reason": "stop"
+  },
+  "50": {
+    "question_id": "f04",
+    "model_file": "qwen2.5-0.5b-instruct-q4_k_m.gguf",
+    "finish_reason": "stop"
+  },
+  "51": {
+    "question_id": "f07",
+    "model_file": "qwen2.5-1.5b-instruct-q4_k_m.gguf",
+    "finish_reason": "stop"
+  },
+  "52": {
+    "question_id": "t01",
+    "model_file": "qwen2.5-0.5b-instruct-q4_k_m.gguf",
+    "finish_reason": "stop"
+  },
+  "53": {
+    "question_id": "w02",
+    "model_file": "qwen2.5-1.5b-instruct-q4_k_m.gguf",
+    "finish_reason": "stop"
+  },
+  "54": {
+    "question_id": "w08",
+    "model_file": "qwen2.5-1.5b-instruct-q4_k_m.gguf",
+    "finish_reason": "stop"
+  },
+  "55": {
+    "question_id": "w09",
+    "model_file": "qwen2.5-1.5b-instruct-q4_k_m.gguf",
+    "finish_reason": "stop"
+  },
+  "56": {
     "question_id": "t02",
     "model_file": "qwen2.5-1.5b-instruct-q4_k_m.gguf",
     "finish_reason": "stop"
   },
-  "39": {
+  "57": {
+    "question_id": "w01",
+    "model_file": "qwen2.5-0.5b-instruct-q4_k_m.gguf",
+    "finish_reason": "stop"
+  },
+  "58": {
     "question_id": "f02",
     "model_file": "qwen2.5-1.5b-instruct-q4_k_m.gguf",
     "finish_reason": "stop"
   },
-  "40": {
+  "59": {
     "question_id": "w01",
     "model_file": "qwen2.5-1.5b-instruct-q4_k_m.gguf",
+    "finish_reason": "stop"
+  },
+  "60": {
+    "question_id": "f01",
+    "model_file": "qwen2.5-0.5b-instruct-q4_k_m.gguf",
     "finish_reason": "stop"
   }
 }

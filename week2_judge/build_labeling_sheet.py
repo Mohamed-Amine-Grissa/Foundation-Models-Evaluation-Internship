@@ -17,7 +17,8 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 from common.config import REPO_ROOT
 
 SHUFFLE_SEED = 42
-GENERATORS = ["qwen2.5-1.5b-instruct-q4_k_m", "Llama-3.2-3B-Instruct-Q4_K_M"]
+GENERATORS = ["qwen2.5-1.5b-instruct-q4_k_m", "Llama-3.2-3B-Instruct-Q4_K_M",
+              "qwen2.5-0.5b-instruct-q4_k_m"]
 
 QUESTIONS_JSONL = REPO_ROOT / "data" / "task" / "questions.jsonl"
 RESP_DIR = REPO_ROOT / "results" / "week2" / "responses"
